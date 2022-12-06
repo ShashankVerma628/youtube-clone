@@ -1,0 +1,33 @@
+.video-card-container {
+    display: flex;
+    gap: 10px;
+
+    .thumbnail-container {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .video-details-container {
+        padding: 0.5em 1em;
+        .video-title {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            .video-details {
+                font-size: 0.8rem;
+                color: $color-light-gray;
+            }
+        }
+
+        .description {
+            font-size: 1rem;
+            text-transform: capitalize;
+            word-wrap: break-word;
+        }
+    }
+}

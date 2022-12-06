@@ -1,0 +1,71 @@
+// Header
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0.5em 1em 0.5em 3em;
+    position: fixed;
+    background-color: $color-black;
+    border-bottom: 1px solid $color-light-gray;
+    width: 100%;
+
+    // Logo
+    .logo-link {
+        display: flex;
+        gap: 5px;
+        font-size: 1.6rem;
+        align-items: center;
+    }
+
+    // search form
+    .search-form-container {
+        width: 70%;
+        margin: 0 auto;
+
+        form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-form-input {
+            width: 80%;
+            padding: 0.5em 1em;
+            background-color: $color-black;
+            color: $color-white;
+            border: 1px solid $color-light-gray;
+            border-right: none;
+            &::placeholder {
+                color: $color-white;
+            }
+        }
+
+        // search btn
+        .search-btn {
+            padding: 0.5em 1em;
+            background-color: $color-light-gray;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-left: none;
+            cursor: pointer;
+        }
+    }
+
+    .user-profile-container{
+        // when user is not logged in 
+        .login-container{
+            border-radius: 10px;
+            border: 1px solid $color-white;
+            padding: 0.5em 1em;
+            display: flex;
+            gap : 10px;
+            cursor: pointer;
+        }
+        // For logged in user
+        .user-profile{
+            display: flex;
+            gap : 10px;
+        }
+    }
+}
